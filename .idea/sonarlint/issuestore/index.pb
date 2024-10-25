@@ -13,7 +13,9 @@ E
 +src/main/java/org/example/model/Laptop.java,1\c\1cb4f2874d430820bc6baa4f3c6f97bada5b0985
 [
 +src/main/java/org/example/model/Tablet.java,7\5\756c256afee44de16c88dce8e2b5be691430a327
-m
-=src/main/java/org/example/interfaces/mapper/TabletMapper.java,7\0\70ef1c807561480a52695c6ee2f54a59218e29b2
 f
 6src/main/java/org/example/interfaces/TabletMapper.java,6\0\60ec1958e72318e79eaa2d4cde709b700645f591
+_
+/src/main/java/org/example/model/Smartwatch.java,9\5\957b6886a53794c5b460b653df157fbdc911b279
+d
+4src/main/java/org/example/interfaces/GenericDao.java,1\7\175b3f561418f9516dabc27752b446172f74ea43

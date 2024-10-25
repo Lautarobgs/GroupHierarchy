@@ -5,6 +5,7 @@ import org.example.model.Laptop;
 
 import java.util.List;
 
+
 public interface LaptopMapper {
 
     @Insert("INSERT INTO Laptop (id, storage) VALUES (#{id}, #{storage})")
