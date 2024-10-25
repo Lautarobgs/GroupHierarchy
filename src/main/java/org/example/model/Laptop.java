@@ -9,9 +9,11 @@ public class Laptop extends Device{
     private int storage;
 
     public Laptop() {
+
     }
 
     public Laptop(int laptopId, int storage) {
+        super();
         this.laptopId = laptopId;
         this.storage = storage;
     }

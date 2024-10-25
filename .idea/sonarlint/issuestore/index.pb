@@ -3,10 +3,6 @@ S
 #src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-m
-=src/main/java/org/example/interfaces/mapper/LaptopMapper.java,c\f\cf08b7694df2850cce9b80622ee491751baf859d
-d
-4src/main/java/org/example/interfaces/mapper/Lap.java,3\2\3252c4aa618415c98a9f3006460919cb7f4c5d43
 f
 6src/main/java/org/example/interfaces/LaptopMapper.java,6\f\6fd378fb719f928ff025a52b9381072c273a14ac
 [
@@ -17,3 +13,7 @@ E
 +src/main/java/org/example/model/Laptop.java,1\c\1cb4f2874d430820bc6baa4f3c6f97bada5b0985
 [
 +src/main/java/org/example/model/Tablet.java,7\5\756c256afee44de16c88dce8e2b5be691430a327
+m
+=src/main/java/org/example/interfaces/mapper/TabletMapper.java,7\0\70ef1c807561480a52695c6ee2f54a59218e29b2
+f
+6src/main/java/org/example/interfaces/TabletMapper.java,6\0\60ec1958e72318e79eaa2d4cde709b700645f591
