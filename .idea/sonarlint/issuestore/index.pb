@@ -39,3 +39,7 @@ g
 7src/main/java/org/example/interfaces/SmartphoneDAO.java,9\f\9ffe00188e0c0939fb0fa99f96b7c41cc2318430
 `
 0src/main/java/org/example/dao/SmartwatchDAO.java,5\0\50467374cf663b132b04bcce183c822b33d96119
+h
+8src/main/java/org/example/service/SmartwatchService.java,f\4\f48f5185259f485252948a4e8d881ae3f130b55b
+d
+4src/main/java/org/example/service/TabletService.java,5\d\5d63feef88162eb56bb6702a9662ac0896175782
