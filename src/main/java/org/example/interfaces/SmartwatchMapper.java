@@ -9,7 +9,7 @@ public interface SmartwatchMapper
     @Insert("INSERT INTO Smartwatch (smartwatch_id, batteryLifeHours, isWaterResistant) VALUES (#{smartwatchId}, #{batteryLifeHours}, #{isWaterResistant})")
     void insert(Smartwatch smartwatch);
 
-    @Select("SELECT * FROM Smartwatch WHERE smartwatch_id = #{smartwatchId}")
+    @Select("SELECT smartwatch_id AS smartwatchId, batteryLifeHours, isWaterResistant FROM Smartwatch WHERE smartwatch_id = #{smartwatchId}")
     Smartwatch findById(@Param("smartwatchId") int smartwatchId);
 
     @Select("SELECT * FROM Smartwatch")
