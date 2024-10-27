@@ -14,9 +14,8 @@ import java.sql.SQLException;
 public class Main {
     private static Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        SmartwatchService smartwatchService = new SmartwatchService();
-        TabletService tabletService = new TabletService();
-        logger.info(smartwatchService.getAllSmartwatches());
+
+        
 
     }
 }
