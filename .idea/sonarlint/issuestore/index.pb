@@ -37,3 +37,5 @@ n
 >src/main/java/org/example/interfaces/SmartphoneDAOMyBatis.java,4\4\4424d5abd61e3ab1192ab7cd383447f345660de5
 g
 7src/main/java/org/example/interfaces/SmartphoneDAO.java,9\f\9ffe00188e0c0939fb0fa99f96b7c41cc2318430
+`
+0src/main/java/org/example/dao/SmartwatchDAO.java,5\0\50467374cf663b132b04bcce183c822b33d96119
