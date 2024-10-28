@@ -19,10 +19,10 @@ public interface SmartphoneMapper {
     Smartphone findByBatteryCapacity(@Param("batteryCapacity") int batteryCapacity);
 
     @Update("UPDATE Smartphone " +
-            "SET brand = #{brand}, model = #{model}, price = #{price}, type = #{type}, " +
-            "batteryCapacity = #{batteryCapacity} WHERE id = #{id}")
+            "SET batteryCapacity = #{batteryCapacity} " +
+            "WHERE smartphone_id = #{smartphoneId}")
     void update(Smartphone smartphone);
 
-    @Delete("DELETE FROM Smartwatch WHERE smartphone_id = #{smartphoneId}")
+    @Delete("DELETE FROM Smartphone WHERE smartphone_id = #{smartphoneId}")
     void deleteById(@Param("smartphoneId") int smartphoneId);
 }

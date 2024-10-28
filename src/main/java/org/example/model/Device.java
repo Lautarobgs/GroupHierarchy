@@ -59,9 +59,9 @@ public abstract class Device {
     }
 
     public enum DeviceType {
-        SMARTPHONE,
-        LAPTOP,
-        SMARTWATCH,
-        TABLET
+        Smartphone,
+        Laptop,
+        Smartwatch,
+        Tablet
     }
 }

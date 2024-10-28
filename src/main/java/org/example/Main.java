@@ -2,13 +2,12 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.dao.SmartphoneDAO;
 import org.example.dao.SmartwatchDAO;
 import org.example.dao.TabletDAO;
 import org.example.model.Laptop;
 import org.example.model.Tablet;
-import org.example.service.LaptopService;
-import org.example.service.SmartwatchService;
-import org.example.service.TabletService;
+import org.example.service.*;
 
 import java.sql.SQLException;
 import org.example.service.SmartwatchService;
@@ -21,8 +20,10 @@ public class Main {
     public static void main(String[] args) {
         SmartwatchService smartwatchService = new SmartwatchService();
         TabletService tabletService = new TabletService();
-
+        DeviceService deviceService = new DeviceService();
+        SmartphoneService smartphoneService = new SmartphoneService();
         try {
+            /*
             System.out.println("==== TEST WITH SMARTWATCH ====");
 
             // Create a new Smartwatch and insert it
@@ -69,7 +70,9 @@ public class Main {
 
             // Delete the Tablet
             tabletService.deleteTablet(1);
-            System.out.println("Tablet deleted.");
+            System.out.println("Tablet deleted.");*/
+            logger.info(smartphoneService.getSmartphoneById(1));
+
 
         } catch (SQLException e) {
             System.err.println("Database operation error: " + e.getMessage());

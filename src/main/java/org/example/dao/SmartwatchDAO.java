@@ -2,9 +2,7 @@ package org.example.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.type.IntegerTypeHandler;
 import org.example.config.MyBatisUtil;
-import org.example.interfaces.GenericDao;
 import org.example.interfaces.SmartwatchMapper;
 import org.example.model.Smartwatch;
 

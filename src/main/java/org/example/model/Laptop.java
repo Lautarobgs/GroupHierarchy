@@ -8,6 +8,12 @@ public class Laptop extends Device{
     private int laptopId;
     private int storage;
 
+    public Laptop(Integer id, String brand, String model, Double price, DeviceType type, int laptopId, int storage) {
+        super(id, brand, model, price, type);
+        this.laptopId = laptopId;
+        this.storage = storage;
+    }
+
     public Laptop() {
         super();
     }

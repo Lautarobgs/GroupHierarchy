@@ -6,7 +6,7 @@ import org.example.model.Device;
 import java.util.List;
 
 public interface DeviceMapper {
-    @Insert("INSERT INTO Device(id,brand,model,price,type) VALUES (#{id}, #{brand}, #{model}, #{price}, #{type}")
+    @Insert("INSERT INTO Device(id, brand, model, price, type) VALUES (#{id}, #{brand}, #{model}, #{price}, #{type})")
     void insert(Device device);
 
     @Select("SELECT * FROM Device WHERE id = #{id}")
@@ -18,6 +18,6 @@ public interface DeviceMapper {
     @Update("UPDATE Device SET brand = #{brand}, model = #{model}, price = #{price}, type = #{type} WHERE id = #{id}")
     void update(Device device);
 
-    @Delete("DELETE FROM Device WHERE device_id = #{deviceId}")
+    @Delete("DELETE FROM Device WHERE id = #{deviceId}") // Asegúrate de que el nombre del campo sea 'id'
     void deleteById(@Param("deviceId") int deviceId);
 }

@@ -17,8 +17,6 @@ f
 6src/main/java/org/example/interfaces/TabletMapper.java,6\0\60ec1958e72318e79eaa2d4cde709b700645f591
 _
 /src/main/java/org/example/model/Smartwatch.java,9\5\957b6886a53794c5b460b653df157fbdc911b279
-d
-4src/main/java/org/example/interfaces/GenericDao.java,1\7\175b3f561418f9516dabc27752b446172f74ea43
 j
 :src/main/java/org/example/interfaces/SmartwatchMapper.java,3\d\3d6329f08a7a01fbb61c367be68f59c442bf5660
 \
@@ -45,3 +43,9 @@ _
 /src/main/java/org/example/model/Smartphone.java,d\0\d065ee49ed8422301958fb0386ea9a279c315798
 d
 4src/main/java/org/example/service/DeviceService.java,3\8\38f60c372ed3afe25eb2369ee158f166838c3ffb
+]
+-src/main/java/org/example/dao/GenericDao.java,c\2\c262977336d58ea71548dbc7e0a9be41a8e9fde0
+`
+0src/main/java/org/example/dao/SmartphoneDAO.java,c\8\c87dd6844564aae935ee53bf600398b4bb59cf0f
+h
+8src/main/java/org/example/service/SmartphoneService.java,a\3\a3787d56a27f442bbb26c25158815252893213c1
