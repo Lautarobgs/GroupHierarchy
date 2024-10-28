@@ -1,12 +1,10 @@
-package org.example.interfaces;
+package org.example.dao;
 
-import java.sql.SQLException;
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;
-import org.example.model.Device;
 import org.example.model.Smartphone;
 
-public class SmartphoneDAOMyBatis implements SmartphoneDAO {
+public class SmartphoneDAOMyBatis implements GenericDao<Smartphone,Integer> {
 
     private final SqlSession sqlSession;
 
@@ -24,14 +22,8 @@ public class SmartphoneDAOMyBatis implements SmartphoneDAO {
         sqlSession.update("SmartphoneMapper.update", smartphone);
     }
 
-    // I tried to not put the next 2 methods here but it was not working
     @Override
-    public void insert(Device device) throws SQLException {}
-    @Override
-    public void update(Device device) throws SQLException {}
-
-    @Override
-    public void deleteById(Integer id) {
+    public void delete(Integer id) {
         sqlSession.delete("SmartphoneMapper.deleteById", id);
     }
 
@@ -41,12 +33,7 @@ public class SmartphoneDAOMyBatis implements SmartphoneDAO {
     }
 
     @Override
-    public List<Device> findAll() {
+    public List<Smartphone> findAll() {
         return sqlSession.selectList("SmartphoneMapper.findAll");
-    }
-
-    @Override
-    public List<Smartphone> findByBatteryCapacity(int batteryCapacity) {
-        return sqlSession.selectList("SmartphoneMapper.findByBatteryCapacity", batteryCapacity);
     }
 }

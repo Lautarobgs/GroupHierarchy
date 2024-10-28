@@ -1,10 +1,10 @@
-package org.example.interfaces;
+package org.example.dao;
 
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.example.model.Device;
 
-public class DeviceDAOMyBatis implements DeviceDAO {
+public class DeviceDAOMyBatis implements GenericDao<Device,Integer> {
 
     private final SqlSession sqlSession;
 
@@ -23,7 +23,7 @@ public class DeviceDAOMyBatis implements DeviceDAO {
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void delete(Integer id) {
         sqlSession.delete("DeviceMapper.deleteById", id);
     }
 
