@@ -19,6 +19,13 @@ public class Smartwatch extends Device
         this.isWaterResistant = isWaterResistant;
     }
 
+    public Smartwatch(Integer id, String brand, String model, Double price, DeviceType type, int smartwatchId, int batteryLifeHours, boolean isWaterResistant) {
+        super(id, brand, model, price, type);
+        this.smartwatchId = smartwatchId;
+        this.batteryLifeHours = batteryLifeHours;
+        this.isWaterResistant = isWaterResistant;
+    }
+
     // Getters and setters
     public int getSmartwatchId() {
         return smartwatchId;

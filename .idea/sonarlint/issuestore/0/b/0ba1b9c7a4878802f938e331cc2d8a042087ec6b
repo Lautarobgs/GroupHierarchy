@@ -1,25 +1,19 @@
 
+„
+java:S1854"ARemove this useless assignment to local variable "laptopService".(³®¹æ8Ï•†§­2J$43e565c6-5729-4302-b0bd-83a71f3efdb0
 ˆ
-java:S1854"ERemove this useless assignment to local variable "smartphoneService".(‹¾ÅÒ8ˆ÷å¢­2J$6fdb21d3-4e1a-4445-bce9-0f76127603d6
+java:S1854"ERemove this useless assignment to local variable "smartphoneService".(‹¾ÅÒ8Ğ•†§­2J$ea99fbcc-619c-4cc0-8c98-332d35282755
+‰
+java:S1854"ARemove this useless assignment to local variable "tabletService".(ƒóõ¯ÿÿÿÿÿ8Ğ•†§­2J$e3821296-b1ac-4d1c-885a-e3df807344b3
 
-java:S1854"ERemove this useless assignment to local variable "smartwatchService".(š¬¤úÿÿÿÿ8ˆ÷å¢­2J$7e045097-4443-43b6-a33b-babbd2b4b225
+java:S1854"ERemove this useless assignment to local variable "smartwatchService".(š¬¤úÿÿÿÿ8Ğ•†§­2J$216c3e2c-20c8-4396-8392-6593238f8972
 ~
-java:S1481"6Remove this unused "smartwatchService" local variable.(š¬¤úÿÿÿÿ8ˆ÷å¢­2J$4c12c6af-8691-498f-9365-039ed8ca9351
+java:S1481"6Remove this unused "smartwatchService" local variable.(š¬¤úÿÿÿÿ8Ğ•†§­2J$4469a5fa-7dcd-4980-a6bb-bfc520d6773d
+z
+java:S1481"2Remove this unused "tabletService" local variable.(ƒóõ¯ÿÿÿÿÿ8Ñ•†§­2J$5107be94-aa79-45ef-b914-854b7dbf76af
 y
-java:S1481"6Remove this unused "smartphoneService" local variable.(‹¾ÅÒ8‰÷å¢­2J$4da756b8-f046-4f13-a3e5-a374a683e2de
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ûà±¸ÿÿÿÿÿ8‹÷å¢­2J$faeb92a1-7cfc-4981-a3aa-f296b9b8ef52
-m	java:S106P"+Replace this use of System.err by a logger.(§òµÁ8‹÷å¢­2J$d5b12bed-4123-4938-97ee-3875aaeeae94
-}
-java:S1128":Remove this unused import 'org.example.dao.SmartphoneDAO'.(í–ŠÙ8µ»ç¢­2J$d49a8bd2-8745-4e58-a1a8-001e36fd7512
-}
-java:S1128":Remove this unused import 'org.example.dao.SmartwatchDAO'.(à®Â 8µ»ç¢­2J$a4171fc7-0dbb-4ed0-8a9f-b562f92e0fc1
-y
-java:S1128"6Remove this unused import 'org.example.dao.TabletDAO'.(±´µß8µ»ç¢­2J$e14fc906-624b-4fb0-b340-aa6fa671b1b6
-w
-java:S1128"5Remove this unused import 'org.example.model.Laptop'.(à¼Ù8µ»ç¢­2J$e5ec1a6a-4f36-4ee1-a2b9-7aa5bfa64e78
-x
-java:S1128	"5Remove this unused import 'org.example.model.Tablet'.(¥®İô8µ»ç¢­2J$0e94fd69-88de-415c-a52f-61b0b7e95fd3
-|
-java:S1128"9Remove this unused import 'org.example.model.Smartwatch'.(¨Õ¶ù8µ»ç¢­2J$5e23d052-fb96-4fb9-8580-14dfe6619407
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8µ»ç¢­2J$d0d35825-7623-42e5-98e9-e13b7efca23e
+java:S1481"6Remove this unused "smartphoneService" local variable.(‹¾ÅÒ8Ñ•†§­2J$0d4a7c64-e1a0-4765-aafa-fcd5d87e69ef
+u
+java:S1481"2Remove this unused "laptopService" local variable.(³®¹æ8Ò•†§­2J$d97bf369-c031-4713-b143-80cb33d2a35d
+l
+java:S1068"*Remove this unused "logger" private field.(åñˆs8Ò•†§­2J$b5ec4749-ab80-4de3-85a0-807bccf5bf1b
