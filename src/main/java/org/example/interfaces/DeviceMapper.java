@@ -18,6 +18,6 @@ public interface DeviceMapper {
     @Update("UPDATE Device SET brand = #{brand}, model = #{model}, price = #{price}, type = #{type} WHERE id = #{id}")
     void update(Device device);
 
-    @Delete("DELETE FROM Device WHERE id = #{deviceId}") // Asegúrate de que el nombre del campo sea 'id'
+    @Delete("DELETE FROM Device WHERE id = #{deviceId}")
     void deleteById(@Param("deviceId") int deviceId);
 }
