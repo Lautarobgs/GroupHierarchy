@@ -35,3 +35,13 @@ d
 4src/main/java/org/example/service/LaptopService.java,f\0\f0eed8f442ee96596fc8aa9e44765c7e8690cf84
 \
 ,src/main/java/org/example/dao/LaptopDAO.java,f\3\f30e929eb3f4634370c72fc0c7655d38d3f7edd4
+\
+,src/main/java/org/example/dao/DeviceDAO.java,b\0\b0532fb064f48f3c66c35306cf29e0a132f360e1
+f
+6src/main/java/org/example/interfaces/DeviceMapper.java,3\9\396bdc7c7550897dde5b19060101e3d717f34c74
+j
+:src/main/java/org/example/interfaces/SmartphoneMapper.java,2\c\2c74d472c65933357e01ae227d81104fc5bd84e6
+_
+/src/main/java/org/example/model/Smartphone.java,d\0\d065ee49ed8422301958fb0386ea9a279c315798
+d
+4src/main/java/org/example/service/DeviceService.java,3\8\38f60c372ed3afe25eb2369ee158f166838c3ffb

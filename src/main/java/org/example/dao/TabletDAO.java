@@ -3,7 +3,6 @@ package org.example.dao;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.example.config.MyBatisUtil;
-import org.example.interfaces.GenericDao;
 import org.example.interfaces.TabletMapper;
 import org.example.model.Tablet;
 

@@ -9,7 +9,7 @@ public class Laptop extends Device{
     private int storage;
 
     public Laptop() {
-
+        super();
     }
 
     public Laptop(int laptopId, int storage) {
