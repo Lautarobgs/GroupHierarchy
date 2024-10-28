@@ -3,10 +3,8 @@ package org.example.dao;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.example.config.MyBatisUtil;
-import org.example.interfaces.GenericDao;
 import org.example.interfaces.LaptopMapper;
 import org.example.model.Laptop;
-
 import java.sql.SQLException;
 import java.util.List;
 

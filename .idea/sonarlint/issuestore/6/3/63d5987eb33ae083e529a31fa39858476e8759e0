@@ -1,3 +1,9 @@
 
-…
-java:S2094"BRemove this empty class, write its code or make it an "interface".(¿Ìû“8Æ¹­ú¬2J$d5de4661-5661-4126-8aae-7df0bd1443c1
+
+java:S5993"9Change the visibility of this constructor to "protected".(Ú°«¶ûÿÿÿÿ8àø¦Ÿ­2J$e64ee20e-b22d-4c7a-b022-cb789ddb73e5
+›	java:S115>"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«Ø¿?8©–£Ÿ­2J$fc13dc98-0d60-4804-b5de-4175eebde859
+¡	java:S115?"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ö¯öãşÿÿÿÿ8©–£Ÿ­2J$2683e035-877a-4fe4-b1b3-cc2125b0a26b
+¡	java:S115@"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«ı•µúÿÿÿÿ8©–£Ÿ­2J$b607c13c-ea01-4519-93bc-d5d156cb6818
+
+java:S5993"9Change the visibility of this constructor to "protected".(Àş‹¸ÿÿÿÿÿ8àø¦Ÿ­2J$edb557e5-eb13-4a6b-98c4-a29e8d3199d9
+¡	java:S115A"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(îŒäÁøÿÿÿÿ8©–£Ÿ­2J$880b1203-1aa0-4b33-893a-8e60b471d0e5

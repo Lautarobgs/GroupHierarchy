@@ -1,22 +1,18 @@
 
-û
-java:S1186"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«µÌë8Û®«ù≠2
-}
-java:S1128":Remove this unused import 'org.example.dao.SmartwatchDAO'.(‡Æ¬†8∂˛√ù≠2J$93119f1a-2f53-4c75-8903-84435efe4ae3
+Ñ
+java:S1854"ARemove this useless assignment to local variable "laptopService".(≥ÆπÊ8á‹Ø†≠2J$2ab3fa56-7fd5-44b7-8c2b-79c0f43eb682
+à
+java:S1854"ERemove this useless assignment to local variable "smartphoneService".(ãæ≈“8á‹Ø†≠2J$6a32b1c9-b9b7-44da-880c-172679ce6deb
 y
-java:S1128"6Remove this unused import 'org.example.dao.TabletDAO'.(±¥µﬂ8∂˛√ù≠2J$12bd47f4-14e2-462b-b1ed-84770b30f0ea
-Q
-java:S1128"5Remove this unused import 'org.example.model.Laptop'.(‡ºŸ8ˆ®«ù≠2
-x
-java:S1128"5Remove this unused import 'org.example.model.Tablet'.(•Æ›Ù8∂˛√ù≠2J$df8dc01b-9f49-489a-9d02-e82609928e67
-[
-java:S1128	">Remove this unused import 'org.example.service.LaptopService'.(ËíΩÏ8ˆ®«ù≠2
-d
-java:S1128
-"BRemove this unused import 'org.example.service.SmartwatchService'.(€´˛Üˇˇˇˇˇ8ˆ®«ù≠2
-[
-java:S1128">Remove this unused import 'org.example.service.TabletService'.(Ω≠≥£8ˆ®«ù≠2
-O
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(€Ô∆ü8ˆ®«ù≠2
-L
-java:S1068"*Remove this unused "logger" private field.(á Á”˝ˇˇˇˇ8˜®«ù≠2
+java:S1481"6Remove this unused "smartphoneService" local variable.(ãæ≈“8â‹Ø†≠2J$904ac26d-4af3-47a9-be02-f9f64070fb11
+u
+java:S1481"2Remove this unused "laptopService" local variable.(≥ÆπÊ8â‹Ø†≠2J$fea6f652-64af-4524-aa7f-270fdf791ab3
+m	java:S106N"+Replace this use of System.err by a logger.(ßÚµ¡8é‹Ø†≠2J$9d851ba6-e25d-481e-8dd8-2d4d7ab9fd33
+}
+java:S1128":Remove this unused import 'org.example.dao.SmartphoneDAO'.(ÌñäŸ8è‹Ø†≠2J$4ed84677-ec97-454c-80ec-5ac9283cf08f
+}
+java:S1128":Remove this unused import 'org.example.dao.SmartwatchDAO'.(‡Æ¬†8è‹Ø†≠2J$f3334d63-90f2-49ca-9f01-08e2f83d8774
+y
+java:S1128"6Remove this unused import 'org.example.dao.TabletDAO'.(±¥µﬂ8è‹Ø†≠2J$e61ccadf-8c04-4b66-bf14-76e42b67b861
+w
+java:S1128"5Remove this unused import 'org.example.model.Laptop'.(‡ºŸ8è‹Ø†≠2J$d886990f-be73-48ba-b9e7-2312cb827a07
