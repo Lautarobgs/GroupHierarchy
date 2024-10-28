@@ -1,29 +1,18 @@
 
 „
-java:S1854"ARemove this useless assignment to local variable "deviceService".(Ò°”¡8ğÚÚŸ­2J$2fe36de5-163a-4345-a7ae-ea3870286db0
-‰
-java:S1854"ARemove this useless assignment to local variable "tabletService".(ƒóõ¯ÿÿÿÿÿ8ğÚÚŸ­2J$fdcd9d39-9c8a-440d-ba59-57146592d2b5
-
-java:S1854"ERemove this useless assignment to local variable "smartwatchService".(š¬¤úÿÿÿÿ8ğÚÚŸ­2J$2f1afe25-c658-4d13-806c-1faf2c38e3b2
-~
-java:S1481"6Remove this unused "smartwatchService" local variable.(š¬¤úÿÿÿÿ8ğÚÚŸ­2J$e851c165-9496-45e9-a39a-2dddc1d6a570
-z
-java:S1481"2Remove this unused "tabletService" local variable.(ƒóõ¯ÿÿÿÿÿ8ğÚÚŸ­2J$c3a1175f-6c81-40e1-80b9-fc8d2d87e51c
-u
-java:S1481"2Remove this unused "deviceService" local variable.(Ò°”¡8ñÚÚŸ­2J$5e47688e-e53f-45a9-80a1-69fb51a69d8e
-~	java:S125"<This block of commented-out lines of code should be removed.(¹‹‡8óÚÚŸ­2J$ed6f2c23-75cf-438f-8936-63303d484780
-m	java:S106N"+Replace this use of System.err by a logger.(§òµÁ8óÚÚŸ­2J$c15cf4ec-d80c-4897-af67-c73c3780e8f8
-}
-java:S1128":Remove this unused import 'org.example.dao.SmartphoneDAO'.(í–ŠÙ8óÚÚŸ­2J$ad78fd53-d5af-49fa-ac3c-7722ef2e74f5
-}
-java:S1128":Remove this unused import 'org.example.dao.SmartwatchDAO'.(à®Â 8óÚÚŸ­2J$462be31f-55f4-45d2-a1e2-5c6f5cf09c07
+java:S1854"ARemove this useless assignment to local variable "laptopService".(³®¹æ8‡Ü¯ ­2J$2ab3fa56-7fd5-44b7-8c2b-79c0f43eb682
+ˆ
+java:S1854"ERemove this useless assignment to local variable "smartphoneService".(‹¾ÅÒ8‡Ü¯ ­2J$6a32b1c9-b9b7-44da-880c-172679ce6deb
 y
-java:S1128"6Remove this unused import 'org.example.dao.TabletDAO'.(±´µß8óÚÚŸ­2J$19d23c91-d889-4896-bdf2-13f6b8815b96
+java:S1481"6Remove this unused "smartphoneService" local variable.(‹¾ÅÒ8‰Ü¯ ­2J$904ac26d-4af3-47a9-be02-f9f64070fb11
+u
+java:S1481"2Remove this unused "laptopService" local variable.(³®¹æ8‰Ü¯ ­2J$fea6f652-64af-4524-aa7f-270fdf791ab3
+m	java:S106N"+Replace this use of System.err by a logger.(§òµÁ8Ü¯ ­2J$9d851ba6-e25d-481e-8dd8-2d4d7ab9fd33
+}
+java:S1128":Remove this unused import 'org.example.dao.SmartphoneDAO'.(í–ŠÙ8Ü¯ ­2J$4ed84677-ec97-454c-80ec-5ac9283cf08f
+}
+java:S1128":Remove this unused import 'org.example.dao.SmartwatchDAO'.(à®Â 8Ü¯ ­2J$f3334d63-90f2-49ca-9f01-08e2f83d8774
+y
+java:S1128"6Remove this unused import 'org.example.dao.TabletDAO'.(±´µß8Ü¯ ­2J$e61ccadf-8c04-4b66-bf14-76e42b67b861
 w
-java:S1128"5Remove this unused import 'org.example.model.Laptop'.(à¼Ù8óÚÚŸ­2J$d84b07f5-00f7-41bf-8624-4be979e501d2
-x
-java:S1128	"5Remove this unused import 'org.example.model.Tablet'.(¥®İô8óÚÚŸ­2J$7ad945a6-d45c-4c3e-a8e7-ce3eaef09c33
-|
-java:S1128"9Remove this unused import 'org.example.model.Smartwatch'.(¨Õ¶ù8óÚÚŸ­2J$d3359dcf-8144-4dfc-a91d-f2c6ee4e3ca5
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8óÚÚŸ­2J$a0986eb4-adac-47c1-8d93-e175e62db52a
+java:S1128"5Remove this unused import 'org.example.model.Laptop'.(à¼Ù8Ü¯ ­2J$d886990f-be73-48ba-b9e7-2312cb827a07

@@ -64,4 +64,15 @@ public abstract class Device {
         Smartwatch,
         Tablet
     }
+
+    @Override
+    public String toString() {
+        return "Device{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", type=" + type +
+                '}';
+    }
 }

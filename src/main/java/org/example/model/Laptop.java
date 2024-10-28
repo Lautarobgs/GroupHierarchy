@@ -15,7 +15,6 @@ public class Laptop extends Device{
     }
 
     public Laptop() {
-        super();
     }
 
     public Laptop(int laptopId, int storage) {
@@ -38,5 +37,14 @@ public class Laptop extends Device{
 
     public void setStorage(int storage) {
         this.storage = storage;
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "laptopId=" + laptopId +
+                ", storage=" + storage +
+                super.toString() +
+                '}';
     }
 }
