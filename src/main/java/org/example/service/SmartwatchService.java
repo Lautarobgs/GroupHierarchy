@@ -3,6 +3,7 @@ package org.example.service;
 import org.example.model.Smartwatch;
 import java.sql.SQLException;
 import org.example.dao.SmartwatchDAO;
+import java.util.List;
 public class SmartwatchService
 {
     private final SmartwatchDAO smartwatchDAO = new SmartwatchDAO();

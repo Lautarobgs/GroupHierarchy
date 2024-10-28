@@ -3,6 +3,7 @@ package org.example.service;
 import org.example.dao.TabletDAO;
 import org.example.model.Tablet;
 import java.sql.SQLException;
+import java.util.List;
 public class TabletService
 {
     private final TabletDAO tabletDAO = new TabletDAO();
