@@ -24,7 +24,7 @@ public class Main {
         LaptopService laptopService = new LaptopService();
 
         try {
-
+            /*
             logger.info("==== TEST WITH SMARTWATCH ====");
 
             // Create a new Smartwatch and insert it
@@ -71,7 +71,9 @@ public class Main {
 
             // Delete the Tablet
             tabletService.deleteTablet(1);
-            logger.info("Tablet deleted.");
+            logger.info("Tablet deleted.");*/
+            logger.info(tabletService.getTabletById(4));
+            logger.info(laptopService.getLaptopById(3));
 
 
         } catch (SQLException e) {

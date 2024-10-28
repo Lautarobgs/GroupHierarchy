@@ -14,7 +14,9 @@ public interface TabletMapper {
             "FROM Device d JOIN Tablet t ON d.id = t.tablet_id")
     List<Tablet> findAll();
 
-    @Select("SELECT tablet_id AS tabletId, hasCellular FROM Tablet WHERE tablet_id = #{tabletId}")
+    @Select("SELECT d.id AS id, d.brand AS brand, d.model AS model, d.price AS price, d.type AS type, " +
+            "t.tablet_id AS tabletId, t.hasCellular FROM Tablet t " +
+            "JOIN Device d ON t.tablet_id = d.id WHERE t.tablet_id = #{tabletId}")
     Tablet findById(@Param("tabletId") int tabletId);
 
     @Update("UPDATE Tablet SET hasCellular = #{hasCellular} WHERE tablet_id = #{tabletId}")
