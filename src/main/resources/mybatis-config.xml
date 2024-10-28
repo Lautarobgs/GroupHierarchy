@@ -18,5 +18,6 @@
         <!--Here we need to insert all of our xml mappers for example SmartphoneMapper.xml-->
         <mapper class="org.example.interfaces.TabletMapper"/>
         <mapper class="org.example.interfaces.SmartwatchMapper"/>
+        <mapper class="org.example.interfaces.LaptopMapper"/>
     </mappers>
 </configuration>

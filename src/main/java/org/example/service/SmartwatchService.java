@@ -19,7 +19,7 @@ public class SmartwatchService
     public List<Smartwatch> getAllSmartwatches() throws SQLException {
         return smartwatchDAO.findAll();
     }
-
+  
     public void updateSmartwatch(Smartwatch smartwatch) throws SQLException {
         smartwatchDAO.update(smartwatch);
     }
@@ -28,4 +28,3 @@ public class SmartwatchService
         smartwatchDAO.delete(id);
     }
 }
-
