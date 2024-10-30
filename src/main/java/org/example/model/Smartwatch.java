@@ -3,6 +3,10 @@ package org.example.model;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import org.example.interfaces.SmartwatchListener;
+import java.util.List;
+
 public class Smartwatch extends Device
 {
     private static final Logger log = LogManager.getLogger(Smartwatch.class);
@@ -11,6 +15,7 @@ public class Smartwatch extends Device
     private int smartwatchId;
     private int batteryLifeHours;
     private boolean isWaterResistant;
+    private final List<SmartwatchListener> listeners = new ArrayList<>();
 
     // Constructor
     public Smartwatch(int smartwatchId, int batteryLifeHours, boolean isWaterResistant) {
@@ -24,6 +29,29 @@ public class Smartwatch extends Device
         this.smartwatchId = smartwatchId;
         this.batteryLifeHours = batteryLifeHours;
         this.isWaterResistant = isWaterResistant;
+    }
+
+    // Metodos para agregar y eliminar listeners
+    public void addSmartwatchListener(SmartwatchListener listener) {
+        listeners.add(listener);
+    }
+
+    public void removeSmartwatchListener(SmartwatchListener listener) {
+        listeners.remove(listener);
+    }
+
+    // Metodo para notificar listeners de actualizacion de bateria
+    private void notifyBatteryLevelUpdated(int newBatteryLevel) {
+        for (SmartwatchListener listener : listeners) {
+            listener.onBatteryLevelUpdated(newBatteryLevel);
+        }
+    }
+
+    // Metodo para notificar listeners de cambio en resistencia al agua
+    private void notifyWaterResistanceChanged(boolean isWaterResistant) {
+        for (SmartwatchListener listener : listeners) {
+            listener.onWaterResistanceChanged(isWaterResistant);
+        }
     }
 
     // Getters and setters
@@ -41,6 +69,7 @@ public class Smartwatch extends Device
 
     public void setBatteryLifeHours(int batteryLifeHours) {
         this.batteryLifeHours = batteryLifeHours;
+        notifyBatteryLevelUpdated(batteryLifeHours); // Notifica cambio de bateria
     }
 
     public boolean isWaterResistant() {
@@ -49,6 +78,7 @@ public class Smartwatch extends Device
 
     public void setWaterResistant(boolean waterResistant) {
         isWaterResistant = waterResistant;
+        notifyWaterResistanceChanged(waterResistant); // Notifica cambio de resistencia al agua
     }
 
     // toString method

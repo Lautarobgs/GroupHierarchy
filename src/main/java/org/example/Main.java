@@ -25,5 +25,17 @@ public class Main {
         SmartphoneService smartphoneService = new SmartphoneService();
         LaptopService laptopService = new LaptopService();
 
+        logger.info("----------LISTENER SMARTWATCH----------");
+        Smartwatch smartwatch = new Smartwatch(1, 24, true);
+        SmartwatchEventListener eventListener = new SmartwatchEventListener();
+        smartwatch.addSmartwatchListener(eventListener);
+
+        logger.info("Updating the battery life of the smartwatch.");
+        // Change the battery life to trigger the notification
+        smartwatch.setBatteryLifeHours(20);
+
+        logger.info("Updating the water resistance of the smartwatch.");
+        // Change water resistance to trigger the notification
+        smartwatch.setWaterResistant(false);
     }
-}
+    }
