@@ -5,6 +5,12 @@ public class Smartphone extends Device{
     private int smartphoneId;
     private int batteryCapacity;
 
+    public Smartphone(Integer id, String brand, String model, Double price, DeviceType type, int smartphoneId, int batteryCapacity) {
+        super(id, brand, model, price, type);
+        this.smartphoneId = smartphoneId;
+        this.batteryCapacity = batteryCapacity;
+    }
+
     public Smartphone(int smartphoneId, int batteryCapacity) {
         this.batteryCapacity = batteryCapacity;
         this.smartphoneId = smartphoneId;

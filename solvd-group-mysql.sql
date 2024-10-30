@@ -42,9 +42,10 @@ CREATE TABLE Tablet (
 INSERT INTO Device (brand, model, price, type) VALUES ('Apple', 'iPhone 13', 999.99, 'Smartphone');
 INSERT INTO Device (brand, model, price, type) VALUES ('Samsung', 'Galaxy Tab S7', 649.99, 'Tablet');
 INSERT INTO Device (brand, model, price, type) VALUES ('Dell', 'XPS 13', 1299.99, 'Laptop');
-INSERT INTO Device (brand, model, price, type) VALUES ('Apple', 'Apple Watch Series 7', 399.99, 'SmartWatch');
+INSERT INTO Device (brand, model, price, type) VALUES ('Apple', 'Apple Watch Series 7', 399.99, 'Smartwatch');
 
+-- Asegúrate de que los IDs de `Device` coincidan antes de realizar inserciones en otras tablas
 INSERT INTO Smartphone (smartphone_id, batteryCapacity) VALUES (1, 4000);
-INSERT INTO Tablet (tablet_id, screenResolution, hasCellular) VALUES (2, '2560x1600', TRUE);
-INSERT INTO Laptop (laptop_id, ram, storage, hasDedicatedGPU) VALUES (3, 16, 512, TRUE);
-INSERT INTO SmartWatch (smartwatch_id, batteryLifeHours, isWaterResistant) VALUES (4, 18, TRUE);
+INSERT INTO Tablet (tablet_id, hasCellular) VALUES (2, TRUE);
+INSERT INTO Laptop (laptop_id, storage) VALUES (3, 512);
+INSERT INTO Smartwatch (smartwatch_id, batteryLifeHours, isWaterResistant) VALUES (4, 18, TRUE);
