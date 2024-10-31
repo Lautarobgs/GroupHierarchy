@@ -1,30 +1,32 @@
 package org.example.service;
 
+import org.example.dao.GenericDao;
 import org.example.dao.TabletDAO;
+import org.example.model.Device;
 import org.example.model.Tablet;
 import java.sql.SQLException;
 import java.util.List;
-public class TabletService
+public class TabletService implements IGenericService<Tablet,Integer>
 {
-    private final TabletDAO tabletDAO = new TabletDAO();
+    private final GenericDao<Tablet,Integer> tabletDAO = new TabletDAO();
 
-    public void addTablet(Tablet tablet) throws SQLException {
+    public void add(Tablet tablet) throws SQLException {
         tabletDAO.insert(tablet);
     }
 
-    public Tablet getTabletById(int id) throws SQLException {
+    public Tablet getById(Integer id) throws SQLException {
         return tabletDAO.findById(id);
     }
 
-    public List<Tablet> getAllTablets() throws SQLException {
+    public List<Tablet> getAll() throws SQLException {
         return tabletDAO.findAll();
     }
 
-    public void updateTablet(Tablet tablet) throws SQLException {
+    public void update(Tablet tablet) throws SQLException {
         tabletDAO.update(tablet);
     }
 
-    public void deleteTablet(int id) throws SQLException {
+    public void delete(Integer id) throws SQLException {
         tabletDAO.delete(id);
     }
 }

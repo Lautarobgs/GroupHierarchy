@@ -65,3 +65,17 @@ h
 8src/main/java/org/example/patterns/AbsDeviceFactory.java,8\4\842d1cfdd77987b82d5331ec0550c4948cf4fd71
 e
 5src/main/java/org/example/patterns/DeviceBuilder.java,4\4\44a69386d1ac3d03238649df0ef20f0841f94b3e
+f
+6src/main/java/org/example/service/IGenericService.java,4\8\487a62ac385ef39dffc7aa5075053657d5d9c55f
+k
+;src/main/java/org/example/patterns/facade/DeviceFacade.java,2\b\2b5f1ebc3d6d4f48485d7d21658f242c2af7f7a7
+q
+Asrc/main/java/org/example/interfaces/patterns/IDeviceFactory.java,9\6\96f7b7e85f2657824943fc8ef49a2b9fd970f74b
+q
+Asrc/main/java/org/example/interfaces/patterns/IDeviceBuilder.java,7\f\7f0e313a4dc6033004a4a4ea7816ccf7c0d4a938
+t
+Dsrc/main/java/org/example/patterns/subbuilder/SmartphoneBuilder.java,4\6\464a85b927f7f9497e8b629e25b1ca4d57f62c2f
+p
+@src/main/java/org/example/patterns/subbuilder/LaptopBuilder.java,9\4\9477b4eb71a13d9d2ccfe13d2c79f2f849473c67
+t
+Dsrc/main/java/org/example/interfaces/patterns/IAbsDeviceFactory.java,9\6\9661c82ac2c5f28e692248d18ac54757017b1ab8
