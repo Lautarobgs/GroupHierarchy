@@ -32,7 +32,7 @@ public class Main {
             IGenericService<Smartphone, Integer> smartphoneService = new SmartphoneService();
             IGenericService<Laptop, Integer> laptopService = new LaptopService();
 
-            // Crear una instancia de DeviceFacade pasando smartphoneService (inyección de dependencia)
+            // Crear una instancia de DeviceFacade pasando smartphoneService (inyeccion de dependencia)
             DeviceFacade deviceFacade = new DeviceFacade(smartphoneService);
 
             // FACTORY Pattern: Creación de un dispositivo Smartphone
@@ -41,13 +41,13 @@ public class Main {
                     Device.DeviceType.Smartphone, 1, "Samsung", "Galaxy S21", 799.99, 101, 4500);
             logger.info("Smartphone created: " + smartphone);
 
-            // ABSTRACT FACTORY Pattern: Creación de un dispositivo Laptop
+            // ABSTRACT FACTORY Pattern: Creacion de un dispositivo Laptop
             logger.info("----------ABSTRACT FACTORY LAPTOP----------");
             AbsDeviceFactory laptopFactory = AbsDeviceFactory.getFactory(Device.DeviceType.Laptop);
             Device laptop = laptopFactory.createDevice(2, "Dell", "XPS 13", 999.99, 201, 512);
             logger.info("Laptop created: " + laptop);
 
-            // BUILDER Pattern: Construcción de un Smartphone usando el Builder
+            // BUILDER Pattern: Construccion de un Smartphone usando el Builder
             logger.info("----------SMARTPHONE BUILDER----------");
             Device smartphoneBuilt = new DeviceBuilder()
                     .setType(Device.DeviceType.Smartphone)
@@ -60,7 +60,7 @@ public class Main {
                     .build();
             logger.info("Smartphone created: " + smartphoneBuilt);
 
-            // LISTENER Pattern: Configuración de eventos para un Smartwatch
+            // LISTENER Pattern: Configuracion de eventos para un Smartwatch
             logger.info("----------LISTENER SMARTWATCH----------");
             Smartwatch smartwatch = new Smartwatch(1, 24, true);
             SmartwatchEventListener eventListener = new SmartwatchEventListener();
