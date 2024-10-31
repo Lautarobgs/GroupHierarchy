@@ -3,6 +3,7 @@ package org.example.patterns;
 import org.example.model.*;
 
 public class DeviceFactory {
+
     public static Device createDevice(Device.DeviceType type, Integer id, String brand, String model, Double price, Object... extraParams) {
         switch (type) {
             case Smartphone:

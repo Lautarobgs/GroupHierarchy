@@ -1,12 +1,13 @@
 package org.example.patterns;
 
+import org.example.interfaces.patterns.IAbsDeviceFactory;
 import org.example.model.Device;
 import org.example.patterns.subfactory.LaptopFactory;
 import org.example.patterns.subfactory.SmartphoneFactory;
 import org.example.patterns.subfactory.SmartwatchFactory;
 import org.example.patterns.subfactory.TabletFactory;
 
-public abstract class AbsDeviceFactory {
+public abstract class AbsDeviceFactory implements IAbsDeviceFactory {
     public abstract Device createDevice(Integer id, String brand, String model, Double price, Object... extraParams);
 
     public static AbsDeviceFactory getFactory(Device.DeviceType type) {

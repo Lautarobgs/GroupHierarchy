@@ -1,19 +1,20 @@
 package org.example.patterns;
 
+import org.example.interfaces.patterns.IDeviceBuilder;
 import org.example.model.*;
 
-public class DeviceBuilder {
-    private Integer id;
-    private String brand;
-    private String model;
-    private Double price;
-    private Device.DeviceType type;
-    private Integer specificId;
-    private Integer batteryCapacity;
-    private Integer storage;
-    private Integer batteryLifeHours;
-    private Boolean isWaterResistant;
-    private Boolean hasCellular;
+public class DeviceBuilder implements IDeviceBuilder {
+    protected Integer id;
+    protected String brand;
+    protected String model;
+    protected Double price;
+    protected Device.DeviceType type;
+    protected Integer specificId;
+    protected Integer batteryCapacity;
+    protected Integer storage;
+    protected Integer batteryLifeHours;
+    protected Boolean isWaterResistant;
+    protected Boolean hasCellular;
 
     public DeviceBuilder setId(Integer id) {
         this.id = id;
@@ -70,6 +71,7 @@ public class DeviceBuilder {
         return this;
     }
 
+    @Override
     public Device build() {
         switch (type) {
             case Smartphone:

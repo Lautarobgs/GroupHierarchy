@@ -3,19 +3,20 @@ package org.example;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.model.Device;
-import org.example.model.Smartphone;
 import org.example.model.Smartwatch;
+import org.example.model.Laptop;
+import org.example.model.Tablet;
 import org.example.patterns.AbsDeviceFactory;
 import org.example.patterns.DeviceBuilder;
 import org.example.patterns.DeviceFactory;
-import org.example.patterns.listener.SmartwatchEventListener;
 import org.example.service.SmartwatchService;
 import org.example.service.TabletService;
 import org.example.service.SmartphoneService;
 import org.example.service.LaptopService;
+import org.example.model.*;
+import org.example.service.*;
 import org.example.patterns.facade.DeviceFacade;
 import java.sql.SQLException;
-import org.example.model.Laptop;
 import java.util.List;
 import org.example.dao.LaptopDAO;
 
@@ -23,12 +24,10 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        SmartwatchService smartwatchService = new SmartwatchService();
-        TabletService tabletService = new TabletService();
-        SmartphoneService smartphoneService = new SmartphoneService();
-        LaptopService laptopService = new LaptopService();
-
-
+        IGenericService<Smartwatch, Integer> smartwatchService = new SmartwatchService();
+        IGenericService<Tablet, Integer> tabletService = new TabletService();
+        IGenericService<Smartphone, Integer> smartphoneService = new SmartphoneService();
+        IGenericService<Laptop, Integer> laptopService = new LaptopService();
         logger.info("----------FACTORY SMARTPHONE----------");
         Device smartphone = DeviceFactory.createDevice(
                 Device.DeviceType.Smartphone, 1, "Samsung", "Galaxy S21", 799.99, 101, 4500);
@@ -115,7 +114,7 @@ public class Main {
             logger.info("----------CRUD OPERATIONS FOR LAPTOP----------");
 
             Laptop newLaptop = new Laptop(3,"Dell","XPS 13",1299.99, Device.DeviceType.Laptop,3,459); // Esto hay que cambiar el numero de laptopid para que compile
-            laptopService.insertLaptop(newLaptop);
+            laptopService.add(newLaptop);
             logger.info("Inserted new laptop: " + newLaptop);
 
             // Obtener todas las laptops
@@ -131,5 +130,5 @@ public class Main {
         }
 
     }
-    }
+}
 

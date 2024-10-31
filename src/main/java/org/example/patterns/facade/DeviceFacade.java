@@ -15,22 +15,22 @@ public class DeviceFacade
 
     // CRUD para Smartphone
     public void addSmartphone(Smartphone smartphone) throws SQLException {
-        smartphoneService.addSmartphone(smartphone);
+        smartphoneService.add(smartphone);
     }
 
     public Smartphone getSmartphoneById(int id) throws SQLException {
-        return smartphoneService.getSmartphoneById(id);
+        return smartphoneService.getById(id);
     }
 
     public List<Smartphone> getAllSmartphones() throws SQLException {
-        return smartphoneService.getAllSmartphones();
+        return smartphoneService.getAll();
     }
 
     public void updateSmartphone(Smartphone smartphone) throws SQLException {
-        smartphoneService.updateSmartphone(smartphone);
+        smartphoneService.update(smartphone);
     }
 
     public void deleteSmartphone(int id) throws SQLException {
-        smartphoneService.deleteSmartphone(id);
+        smartphoneService.delete(id);
     }
 }
