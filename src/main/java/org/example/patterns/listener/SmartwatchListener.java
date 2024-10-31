@@ -1,4 +1,4 @@
-package org.example.interfaces;
+package org.example.patterns.listener;
 
 public interface SmartwatchListener
 {

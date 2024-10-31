@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
-import org.example.interfaces.SmartwatchListener;
+import org.example.patterns.listener.SmartwatchListener;
 import java.util.List;
 
 public class Smartwatch extends Device
