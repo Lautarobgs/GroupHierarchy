@@ -7,6 +7,8 @@ import org.example.interfaces.LaptopMapper;
 import org.example.model.Laptop;
 import java.sql.SQLException;
 import java.util.List;
+import org.example.patterns.decorator.TransactionalSession;
+import org.example.patterns.decorator.SessionUtil;
 
 public class LaptopDAO implements GenericDao<Laptop,Integer> {
 
@@ -16,44 +18,50 @@ public class LaptopDAO implements GenericDao<Laptop,Integer> {
     }
 
     @Override
+    @TransactionalSession
     public void insert(Laptop laptop) throws SQLException {
-        try (SqlSession session = sqlSessionFactory.openSession()) {
+        SessionUtil.executeTransactional(session -> {
             LaptopMapper mapper = session.getMapper(LaptopMapper.class);
             mapper.insert(laptop);
-            session.commit();
-        }
+            return null;
+        });
     }
 
     @Override
+    @TransactionalSession
     public List<Laptop> findAll() throws SQLException {
-        try (SqlSession session = sqlSessionFactory.openSession()) {
+        return SessionUtil.executeTransactional(session -> {
             LaptopMapper mapper = session.getMapper(LaptopMapper.class);
             return mapper.findAll();
-        }
+        });
     }
+
     @Override
+    @TransactionalSession
     public Laptop findById(Integer laptopId) throws SQLException {
-        try (SqlSession session = sqlSessionFactory.openSession()) {
+        return SessionUtil.executeTransactional(session -> {
             LaptopMapper mapper = session.getMapper(LaptopMapper.class);
             return mapper.findById(laptopId);
-        }
+        });
     }
 
     @Override
+    @TransactionalSession
     public void update(Laptop laptop) throws SQLException {
-        try (SqlSession session = sqlSessionFactory.openSession()) {
+        SessionUtil.executeTransactional(session -> {
             LaptopMapper mapper = session.getMapper(LaptopMapper.class);
             mapper.update(laptop);
-            session.commit();
-        }
+            return null;
+        });
     }
 
     @Override
+    @TransactionalSession
     public void delete(Integer laptopId) throws SQLException {
-        try (SqlSession session = sqlSessionFactory.openSession()) {
+        SessionUtil.executeTransactional(session -> {
             LaptopMapper mapper = session.getMapper(LaptopMapper.class);
             mapper.deleteById(laptopId);
-            session.commit();
-        }
+            return null;
+        });
     }
 }

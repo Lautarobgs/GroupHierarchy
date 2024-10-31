@@ -49,3 +49,16 @@ INSERT INTO Smartphone (smartphone_id, batteryCapacity) VALUES (1, 4000);
 INSERT INTO Tablet (tablet_id, hasCellular) VALUES (2, TRUE);
 INSERT INTO Laptop (laptop_id, storage) VALUES (3, 512);
 INSERT INTO Smartwatch (smartwatch_id, batteryLifeHours, isWaterResistant) VALUES (4, 18, TRUE);
+
+SELECT * FROM Smartwatch;
+SELECT * FROM Smartphone;
+SELECT * FROM Device;
+SELECT * FROM Laptop;
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM Laptop;
+SET SQL_SAFE_UPDATES = 1;  -- Reactivar el modo seguro después de ejecutar el delete
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM Smartphone;
+

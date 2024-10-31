@@ -2,7 +2,6 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-<<<<<<< Updated upstream
 import org.example.model.Device;
 import org.example.model.Smartwatch;
 import org.example.model.Laptop;
@@ -14,18 +13,12 @@ import org.example.service.SmartwatchService;
 import org.example.service.TabletService;
 import org.example.service.SmartphoneService;
 import org.example.service.LaptopService;
-=======
 import org.example.model.*;
-import org.example.patterns.AbsDeviceFactory;
-import org.example.patterns.DeviceBuilder;
-import org.example.patterns.DeviceFactory;
-import org.example.patterns.listener.SmartwatchEventListener;
 import org.example.service.*;
 import org.example.patterns.facade.DeviceFacade;
 import java.sql.SQLException;
 import java.util.List;
 import org.example.dao.LaptopDAO;
->>>>>>> Stashed changes
 
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
@@ -35,18 +28,6 @@ public class Main {
         IGenericService<Tablet, Integer> tabletService = new TabletService();
         IGenericService<Smartphone, Integer> smartphoneService = new SmartphoneService();
         IGenericService<Laptop, Integer> laptopService = new LaptopService();
-
-        logger.info("----------LISTENER SMARTWATCH----------");
-        Smartwatch smartwatch = new Smartwatch(1, 24, true);
-        SmartwatchEventListener eventListener = new SmartwatchEventListener();
-        smartwatch.addSmartwatchListener(eventListener);
-
-        logger.info("Updating the battery life of the smartwatch.");
-        smartwatch.setBatteryLifeHours(20);
-
-        logger.info("Updating the water resistance of the smartwatch.");
-        smartwatch.setWaterResistant(false);
-
         logger.info("----------FACTORY SMARTPHONE----------");
         Device smartphone = DeviceFactory.createDevice(
                 Device.DeviceType.Smartphone, 1, "Samsung", "Galaxy S21", 799.99, 101, 4500);
@@ -68,8 +49,6 @@ public class Main {
                 .setBatteryCapacity(4500)
                 .build();
         logger.info("Smartphone created: " + smartphoneBuilt);
-<<<<<<< Updated upstream
-=======
 
         logger.info("----------LISTENER SMARTWATCH----------");
         Smartwatch smartwatch = new Smartwatch(1, 24, true);
@@ -150,6 +129,6 @@ public class Main {
             logger.error("Error performing CRUD operations on Laptop: ", e);
         }
 
->>>>>>> Stashed changes
     }
 }
+
