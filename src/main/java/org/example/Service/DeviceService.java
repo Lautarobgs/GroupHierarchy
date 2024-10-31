@@ -5,6 +5,7 @@ import org.example.model.Device;
 import java.sql.SQLException;
 import org.example.dao.DeviceDAO;
 import java.util.List;
+import org.example.service.IGenericService;
 
 public class DeviceService implements IGenericService<Device,Integer>
 {

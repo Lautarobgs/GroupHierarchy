@@ -7,13 +7,18 @@ import org.example.model.Smartwatch;
 import java.sql.SQLException;
 import java.util.List;
 import org.example.dao.SmartphoneDAO;
-
+import org.example.service.IGenericService;
 
 public class DeviceFacade
 {
-    private final SmartphoneService smartphoneService = new SmartphoneService();
+    private final IGenericService<Smartphone, Integer> smartphoneService;
 
-    // CRUD para Smartphone
+    // Constructor injection for services (DIP)
+    public DeviceFacade(IGenericService<Smartphone, Integer> smartphoneService) {
+        this.smartphoneService = smartphoneService;
+    }
+
+    // CRUD for Smartphone
     public void addSmartphone(Smartphone smartphone) throws SQLException {
         smartphoneService.add(smartphone);
     }
