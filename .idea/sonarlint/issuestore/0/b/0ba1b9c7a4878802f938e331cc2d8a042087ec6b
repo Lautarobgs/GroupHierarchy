@@ -1,0 +1,45 @@
+
+
+java:S2629#"7Use the built-in formatting to construct this argument.(ºãª§ùÿÿÿÿ8úí×Ÿ®2J$9580269a-a480-4655-bb25-24ae8e03136b
+y
+java:S2629("7Use the built-in formatting to construct this argument.(Ú€8úí×Ÿ®2J$00d0bfef-6a65-44af-9c1a-eefe8fdf09b8
+y
+java:S26294"7Use the built-in formatting to construct this argument.(ĞÏ“*8ûí×Ÿ®2J$03b74676-a918-4302-8684-1327c86f3b4c
+z
+java:S2629J"7Use the built-in formatting to construct this argument.(³ãå©8ûí×Ÿ®2J$26378b1b-d15c-4c9c-bd41-87adc6f1c47d
+z
+java:S2629O"7Use the built-in formatting to construct this argument.(¨¸‰ÿ8ûí×Ÿ®2J$d9d4c745-35ba-49f8-90a7-9b6826bf3add
+
+java:S2629X"7Use the built-in formatting to construct this argument.(ÑÃı”üÿÿÿÿ8ûí×Ÿ®2J$f47cb96a-1279-4eee-9f19-b1328b08a780
+
+java:S2629w"7Use the built-in formatting to construct this argument.(Îşçÿûÿÿÿÿ8ûí×Ÿ®2J$a9fe317c-3f22-48ed-a03c-fd37fe903dce
+z
+java:S2629}"7Use the built-in formatting to construct this argument.(ò‡¿õ8ûí×Ÿ®2J$32851719-e7be-4909-ab50-c84a4c1e6b2a
+ˆ
+java:S1854"ERemove this useless assignment to local variable "smartphoneService".(ŠğÄ8€î×Ÿ®2J$e84dbe04-6438-4fa0-992f-c22bebb8a7c8
+„
+java:S1854"ARemove this useless assignment to local variable "tabletService".(×Ã¥÷8€î×Ÿ®2J$1183128e-7d3e-4911-b2a4-3af268c520e7
+
+java:S1854"ERemove this useless assignment to local variable "smartwatchService".(Œã·ïıÿÿÿÿ8€î×Ÿ®2J$ac2df65a-3dbb-45df-bbd8-85a078815516
+~
+java:S1481"6Remove this unused "smartwatchService" local variable.(Œã·ïıÿÿÿÿ8î×Ÿ®2J$f382f31b-2b69-4c70-9576-c2cbf5416090
+u
+java:S1481"2Remove this unused "tabletService" local variable.(×Ã¥÷8‚î×Ÿ®2J$fd982c48-61c6-48b2-9698-80934a2f763e
+y
+java:S1481"6Remove this unused "smartphoneService" local variable.(ŠğÄ8‚î×Ÿ®2J$cfc07cb1-564a-4c8d-abe2-960f1906c965
+‰
+java:S3457#"AFormat specifiers should be used instead of string concatenation.(ºãª§ùÿÿÿÿ8‚î×Ÿ®2J$6b02505b-ebe8-4a1a-afeb-f06d28bccbd3
+ƒ
+java:S3457("AFormat specifiers should be used instead of string concatenation.(Ú€8ƒî×Ÿ®2J$53578140-58a4-4354-9a6f-f05356b81a75
+ƒ
+java:S34574"AFormat specifiers should be used instead of string concatenation.(ĞÏ“*8…î×Ÿ®2J$a0e236d2-aba7-422f-8745-723fdd5dac02
+„
+java:S3457J"AFormat specifiers should be used instead of string concatenation.(³ãå©8‡î×Ÿ®2J$32819c2c-aaad-4e62-8c91-d3b99b666596
+„
+java:S3457O"AFormat specifiers should be used instead of string concatenation.(¨¸‰ÿ8‡î×Ÿ®2J$a78112d2-71ee-4179-b56c-7695c4d6f531
+‰
+java:S3457X"AFormat specifiers should be used instead of string concatenation.(ÑÃı”üÿÿÿÿ8ˆî×Ÿ®2J$b3033f8b-7ed6-4537-878d-2af5ec6bbfb1
+‰
+java:S3457w"AFormat specifiers should be used instead of string concatenation.(Îşçÿûÿÿÿÿ8Šî×Ÿ®2J$ec21a05c-21ae-498b-96ce-bcf5ec31371b
+„
+java:S3457}"AFormat specifiers should be used instead of string concatenation.(ò‡¿õ8‹î×Ÿ®2J$0737701c-e919-4722-a8a8-9e99e221f709

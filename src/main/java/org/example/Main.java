@@ -9,6 +9,7 @@ import org.example.model.Tablet;
 import org.example.patterns.AbsDeviceFactory;
 import org.example.patterns.DeviceBuilder;
 import org.example.patterns.DeviceFactory;
+import org.example.patterns.listener.SmartwatchEventListener;
 import org.example.service.SmartwatchService;
 import org.example.service.TabletService;
 import org.example.service.SmartphoneService;
