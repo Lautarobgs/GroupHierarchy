@@ -9,6 +9,8 @@ import org.example.model.Tablet;
 import org.example.patterns.AbsDeviceFactory;
 import org.example.patterns.DeviceBuilder;
 import org.example.patterns.DeviceFactory;
+import org.example.patterns.decorator.BusinessLaptopDecorator;
+import org.example.patterns.decorator.GamingLaptopDecorator;
 import org.example.patterns.listener.SmartwatchEventListener;
 import org.example.service.SmartwatchService;
 import org.example.service.TabletService;
@@ -120,27 +122,33 @@ public class Main {
                 logger.error("Error performing CRUD operations on Smartphone: ", e);
             }
 
-            // DECORATOR Pattern: Operaciones CRUD para Laptop usando LaptopService
-            logger.info("----------DECORATOR LAPTOP ----------");
-            try {
-                logger.info("----------CRUD OPERATIONS FOR LAPTOP----------");
+            // DECORATOR Pattern
+        logger.info("----------DECORATOR LAPTOP ----------");
 
-                // Crear y agregar una nueva Laptop
-                Laptop newLaptop = new Laptop(3, "Dell", "XPS 13", 1299.99, Device.DeviceType.Laptop, 2, 459); // Recordar! que para probarlo debemos cambiar el laptopId
-                laptopService.add(newLaptop);
-                logger.info("Inserted new laptop: " + newLaptop);
+        Laptop basicLaptop = new Laptop(1, "Dell", "Inspiron 15", 800.00, Device.DeviceType.Laptop, 101, 512);
 
-                // Obtener todas las laptops
-                List<Laptop> laptops = laptopService.getAll();
-                logger.info("Retrieving all laptops:");
-                for (Laptop laptopEntry : laptops) {
-                    logger.info("Found laptop: " + laptopEntry);
-                }
+        //Laptop basica
+        logger.info("Detalles del Laptop Basico:");
+        logger.info(basicLaptop);
+        logger.info("Precio: " + basicLaptop.getPrice());
 
-            } catch (SQLException e) {
-                logger.error("Error performing CRUD operations on Laptop: ", e);
-            }
+        // Aplicar decorador de caracteristicas de Gaming
+        Laptop gamingLaptop = new GamingLaptopDecorator(basicLaptop);
+        logger.info("\nDetalles del Laptop Gaming:");
+        logger.info(gamingLaptop);
+        logger.info("Precio: " + gamingLaptop.getPrice());
 
+        // Aplicar decorador de caracteristicas de Business
+        Laptop businessLaptop = new BusinessLaptopDecorator(basicLaptop);
+        logger.info("\nDetalles del Laptop Business:");
+        logger.info(businessLaptop);
+        logger.info("Precio: " + businessLaptop.getPrice());
+
+        // Aplicar multiples decoradores
+        Laptop ultimateGamingBusinessLaptop = new BusinessLaptopDecorator(gamingLaptop);
+        logger.info("\nDetalles del Laptop Ultimate Gaming y Business:");
+        logger.info(ultimateGamingBusinessLaptop);
+        logger.info("Precio: " + ultimateGamingBusinessLaptop.getPrice());
     }
 }
 

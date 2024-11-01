@@ -6,6 +6,7 @@ import org.example.model.Smartwatch;
 import java.sql.SQLException;
 import org.example.dao.SmartwatchDAO;
 import java.util.List;
+import org.example.service.IGenericService;
 public class SmartwatchService implements IGenericService<Smartwatch,Integer>
 {
     private final GenericDao<Smartwatch,Integer> smartwatchDAO = new SmartwatchDAO();
