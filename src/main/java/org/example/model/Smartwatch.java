@@ -2,6 +2,7 @@ package org.example.model;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.patterns.strategy.BatteryManagementStrategy;
 
 import java.util.ArrayList;
 import org.example.patterns.listener.SmartwatchListener;
@@ -16,6 +17,9 @@ public class Smartwatch extends Device
     private int batteryLifeHours;
     private boolean isWaterResistant;
     private final List<SmartwatchListener> listeners = new ArrayList<>();
+
+    // Reference to the battery management strategy
+    private BatteryManagementStrategy batteryManagementStrategy;
 
     // Constructor
     public Smartwatch(int smartwatchId, int batteryLifeHours, boolean isWaterResistant) {
@@ -38,6 +42,19 @@ public class Smartwatch extends Device
 
     public void removeSmartwatchListener(SmartwatchListener listener) {
         listeners.remove(listener);
+    }
+
+    // Set the battery management strategy
+    public void setBatteryManagementStrategy(BatteryManagementStrategy batteryManagementStrategy) {
+        this.batteryManagementStrategy = batteryManagementStrategy;
+    }
+
+    public void manageBattery() {
+        if (batteryManagementStrategy != null) {
+            batteryManagementStrategy.manageBattery(this.batteryLifeHours);
+        } else {
+            log.warn("No battery management strategy set.");
+        }
     }
 
     // Metodo para notificar listeners de actualizacion de bateria
