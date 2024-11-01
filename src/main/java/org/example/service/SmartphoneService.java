@@ -11,7 +11,6 @@ public class SmartphoneService implements IGenericService<Smartphone,Integer>
 {
     private final GenericDao<Smartphone,Integer> smartphoneDAO = new SmartphoneDAO();
 
-    @Override
     public void add(Smartphone Smartphone) throws SQLException {
         smartphoneDAO.insert(Smartphone);
     }

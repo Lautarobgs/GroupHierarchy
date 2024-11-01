@@ -10,6 +10,9 @@ import org.example.patterns.AbsDeviceFactory;
 import org.example.patterns.DeviceBuilder;
 import org.example.patterns.DeviceFactory;
 import org.example.patterns.listener.SmartwatchEventListener;
+import org.example.patterns.strategy.BatteryManagementStrategy;
+import org.example.patterns.strategy.BatteryNotificationStrategy;
+import org.example.patterns.strategy.BatterySaverStrategy;
 import org.example.service.SmartwatchService;
 import org.example.service.TabletService;
 import org.example.service.SmartphoneService;
@@ -17,6 +20,7 @@ import org.example.service.LaptopService;
 import org.example.model.*;
 import org.example.service.*;
 import org.example.patterns.facade.DeviceFacade;
+import org.example.patterns.mvc.*;
 import java.sql.SQLException;
 import java.util.List;
 import org.example.dao.LaptopDAO;
@@ -29,6 +33,7 @@ public class Main {
         IGenericService<Tablet, Integer> tabletService = new TabletService();
         IGenericService<Smartphone, Integer> smartphoneService = new SmartphoneService();
         IGenericService<Laptop, Integer> laptopService = new LaptopService();
+
         logger.info("----------FACTORY SMARTPHONE----------");
         Device smartphone = DeviceFactory.createDevice(
                 Device.DeviceType.Smartphone, 1, "Samsung", "Galaxy S21", 799.99, 101, 4500);
@@ -125,11 +130,46 @@ public class Main {
                 logger.info("Found laptop: " + laptopEntry);
             }
 
-
         } catch (SQLException e) {
             logger.error("Error performing CRUD operations on Laptop: ", e);
         }
 
+        try {
+            logger.info("----------CRUD OPERATIONS FOR SMARTPHONE USING PROXY----------");
+            Smartphone smartphoneProxy = new Smartphone(17, "Brand", "Model", 999.99, Device.DeviceType.Smartphone, 18, 4000);
+            smartphoneService.add(smartphoneProxy);
+            System.out.println(smartphoneService.getById(17));
+        } catch (SQLException e) {
+            logger.error("Error performing CRUD operations on Laptop: ", e);
+        }
+
+        logger.info("----------SMARTWATCH STRATEGY----------");
+        Smartwatch smart = new Smartwatch(12, 70, true);
+        // Using the notification strategy
+        BatteryManagementStrategy notificationStrategy = new BatteryNotificationStrategy();
+        smart.setBatteryManagementStrategy(notificationStrategy);
+        smart.manageBattery();
+
+        // Switching to the battery saver strategy
+        BatteryManagementStrategy saverStrategy = new BatterySaverStrategy();
+        smart.setBatteryManagementStrategy(saverStrategy);
+        smart.manageBattery();
+        logger.info("Strategy of battery management configurated");
+
+        logger.info("----------SMARTPHONE WITH MVC----------");
+        Smartphone smartphone2 = new Smartphone(1, "Samsung", "Galaxy S21", 799.99, Device.DeviceType.Smartphone, 1001, 4000);
+
+        // View
+        SmartphoneView view = new SmartphoneView();
+        // Controller
+        SmartphoneController controller = new SmartphoneController(smartphone2, view);
+        // Details
+        controller.displaySmartphoneDetails();
+        // Updating and exhibiting
+        controller.updateBatteryCapacity(4500);
+        controller.updatePrice(749.99);
+        controller.displaySmartphoneDetails();
+        logger.info("MVC pattern utilized");
     }
 }
 
