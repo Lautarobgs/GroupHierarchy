@@ -1,6 +1,7 @@
 package org.example.service;
 
 import org.example.dao.GenericDao;
+import org.example.model.Device;
 import org.example.model.Smartphone;
 import java.sql.SQLException;
 import org.example.dao.SmartphoneDAO;
